@@ -5,7 +5,7 @@ export const HERO_DATA = {
   title: "I Build Scalable Code & Extract Data Insights.",
   description:
     "Full-Time Learner & Tech Enthusiast | Bridging Software Engineering, Data Science & Mathematics to Build Scalable Digital Ecosystems.",
-  avatarUrl: "./src/assets/farhanPhoto.jpg",
+  avatarUrl: "images/farhanPhoto.jpg",
   cvUrl: "#",
   githubUrl: "https://github.com/Farhan-Nawwafal",
   linkedinUrl:

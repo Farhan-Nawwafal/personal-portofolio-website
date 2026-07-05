@@ -40,7 +40,7 @@ export default function Header() {
           <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-violet-600 via-indigo-600 to-lime-400 p-[1px] transition-transform duration-300 group-hover:scale-105">
             <div className="w-full h-full bg-[#0F172A] rounded-[11px] flex items-center justify-center">
               {/* <Code2 className="w-5 h-5 text-lime-400 group-hover:text-violet-400 transition-colors" /> */}
-              <img src="./src/assets/icon-web.png" className="w-8 h-8" alt="" />
+              <img src="images/icon-web.png" className="w-8 h-8" alt="" />
             </div>
           </div>
           <span className="font-sans font-bold text-xl text-white tracking-tight">
