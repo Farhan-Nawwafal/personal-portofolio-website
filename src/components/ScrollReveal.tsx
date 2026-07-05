@@ -1,8 +1,8 @@
 import React from "react";
-import { motion, HTMLMotionProps } from "motion/react";
+import { motion, HTMLMotionProps, Transition } from "motion/react";
 
 // Common visual transition settings for standard, lightweight feel
-const springTransition = {
+const springTransition: Transition = {
   type: "spring",
   damping: 25,
   stiffness: 100,
