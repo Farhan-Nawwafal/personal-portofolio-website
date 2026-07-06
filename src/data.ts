@@ -87,7 +87,7 @@ export const PROJECTS_DATA: Project[] = [
       "Developed user-facing application modules, implementing core features such as personalized analytical dashboards, daily lifestyle input forms, digital journals, and automated reminder alerts.",
     ],
     github: "https://github.com/COFFEE-CODE-COMMUNITY/heylth-fe",
-    demo: "#",
+    demo: "https://www.heylth.space/",
   },
   {
     id: "project-4",
@@ -119,7 +119,7 @@ export const PROJECTS_DATA: Project[] = [
       "Developed an interactive web dashboard utilizing Streamlit to visualize data analytics insights and facilitate stakeholders in understanding historical metrics effectively.",
     ],
     github: "https://github.com/Farhan-Nawwafal/amati-app",
-    demo: "#",
+    demo: "https://amati-frontend.vercel.app/",
   },
   {
     id: "project-5",
