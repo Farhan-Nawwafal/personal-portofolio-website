@@ -204,7 +204,7 @@ export default function LearningHub() {
               { id: "all", label: "All Activities" },
               { id: "certs-courses", label: "Certs & Courses" },
               { id: "events", label: "Events" },
-              { id: "articles", label: "Medium Articles" },
+              { id: "articles", label: "Digital Journalling" },
             ].map((tab) => (
               <button
                 key={tab.id}
