@@ -252,53 +252,9 @@ export const SKILLS_DATA: Skill[] = [
 
 // === Learning Hub Data ===
 
-export const CERTIFICATIONS_DATA: Certification[] = [
-  {
-    id: "cert-1",
-    title: "Applied Machine Learning & Predictive Modeling",
-    provider: "Dicoding Indonesia",
-    description:
-      "Mendalami model regresi, klasifikasi, klusterisasi tingkat lanjut, NLP sederhana, serta implementasi pipeline produksi ML.",
-    status: "Completed",
-    imageUrl:
-      "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=600&h=350&q=80",
-    credentialUrl: "#",
-  },
-  {
-    id: "cert-2",
-    title: "Architecting Clean Backend & Database Systems",
-    provider: "Dicoding Academy",
-    description:
-      "Sertifikasi kompetensi merancang struktur backend menggunakan RESTful API, pengujian beban kueri, dan normalisasi database relasional skala enterprise.",
-    status: "Completed",
-    imageUrl:
-      "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?auto=format&fit=crop&w=600&h=350&q=80",
-    credentialUrl: "#",
-  },
-];
+export const CERTIFICATIONS_DATA: Certification[] = [];
 
-export const COURSES_DATA: Course[] = [
-  {
-    id: "course-1",
-    title: "Advanced Full-Stack Web Architecture",
-    platform: "BuildWithAngga (BWAI)",
-    description:
-      "Mempelajari ekosistem Next.js, manajemen state reaktif, optimasi rendering SSR/ISR, serta integrasi gateway pembayaran lokal.",
-    status: "Completed",
-    imageUrl:
-      "https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=600&h=350&q=80",
-  },
-  {
-    id: "course-2",
-    title: "Generative AI & LLM Fine-Tuning Workshop",
-    platform: "Google Cloud Skills Boost",
-    description:
-      "Eksplorasi mendalam mengenai parameter efisiensi tuning, RAG (Retrieval-Augmented Generation), dan orkestrasi agent menggunakan Vertex AI.",
-    status: "Ongoing",
-    imageUrl:
-      "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=600&h=350&q=80",
-  },
-];
+export const COURSES_DATA: Course[] = [];
 
 export const EVENTS_DATA: Event[] = [
   {
@@ -331,8 +287,7 @@ export const EVENTS_DATA: Event[] = [
     description:
       "Lomba yang membawakan tema AI For Sustainable Future. Tujuan nya untuk menggali potensi dan inovasi berbasis AI untuk masa depan yang berkelanjutan.",
     status: "In Progress",
-    imageUrl:
-      "/images/events/brin-ai-2026.png",
+    imageUrl: "/images/events/brin-ai-2026.png",
     location: "Online Competition",
     eventType: "Competition Event",
     date: "Maret 2026",
@@ -343,8 +298,7 @@ export const EVENTS_DATA: Event[] = [
     description:
       "Kegiatan tahunan yang diselenggarakan oleh UNIKOM dengan tujuan mengundang mahasiswa untuk memberikan hasil risetnya sekarang, yang berfokus pada beberapa tema seperti Earth, Environmental Science and Technology, dan dan lain-lain.",
     status: "In Progress",
-    imageUrl:
-      "/images/events/isceer-2026.png",
+    imageUrl: "/images/events/isceer-2026.png",
     location: "Offline Conference",
     eventType: "Academic Event",
     date: "Maret 2026",
