@@ -23,6 +23,7 @@ export default function Header() {
     { name: "About", href: "#about" },
     { name: "Projects", href: "#projects" },
     { name: "Skills & Tools", href: "#skills" },
+    { name: "Growth Hub", href: "#learning-hub" },
     { name: "Contact", href: "#contact" },
   ];
 
