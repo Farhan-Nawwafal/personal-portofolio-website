@@ -15,160 +15,12 @@ import {
   Laptop,
 } from "lucide-react";
 import { ScrollReveal, StaggerContainer, StaggerItem } from "./ScrollReveal";
-
-// 1. Interfaces & Types Setup
-export interface Certification {
-  id: string;
-  title: string;
-  provider: string;
-  description: string;
-  status: "Completed";
-  imageUrl: string;
-  credentialUrl?: string;
-}
-
-export interface Course {
-  id: string;
-  title: string;
-  platform: string;
-  description: string;
-  status: "Ongoing" | "Completed";
-  imageUrl: string;
-}
-
-export interface TechEvent {
-  id: string;
-  title: string;
-  description: string;
-  status: "Attended";
-  imageUrl: string;
-  location: string;
-  date: string;
-}
-
-export interface WrittenArticle {
-  id: string;
-  title: string;
-  description: string;
-  status: "Published" | "In Progress" | "Idea";
-  readTime?: string;
-  url?: string;
-  date?: string;
-}
-
-// 2. Mock Data for Farhan's Growth & Learning Hub
-const CERTIFICATIONS: Certification[] = [
-  {
-    id: "cert-1",
-    title: "Applied Machine Learning & Predictive Modeling",
-    provider: "Dicoding Indonesia",
-    description:
-      "Mendalami model regresi, klasifikasi, klusterisasi tingkat lanjut, NLP sederhana, serta implementasi pipeline produksi ML.",
-    status: "Completed",
-    imageUrl:
-      "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=600&h=350&q=80",
-    credentialUrl: "#",
-  },
-  {
-    id: "cert-2",
-    title: "Architecting Clean Backend & Database Systems",
-    provider: "Dicoding Academy",
-    description:
-      "Sertifikasi kompetensi merancang struktur backend menggunakan RESTful API, pengujian beban kueri, dan normalisasi database relasional skala enterprise.",
-    status: "Completed",
-    imageUrl:
-      "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?auto=format&fit=crop&w=600&h=350&q=80",
-    credentialUrl: "#",
-  },
-];
-
-const COURSES: Course[] = [
-  {
-    id: "course-1",
-    title: "Advanced Full-Stack Web Architecture",
-    platform: "BuildWithAngga (BWAI)",
-    description:
-      "Mempelajari ekosistem Next.js, manajemen state reaktif, optimasi rendering SSR/ISR, serta integrasi gateway pembayaran lokal.",
-    status: "Completed",
-    imageUrl:
-      "https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=600&h=350&q=80",
-  },
-  {
-    id: "course-2",
-    title: "Generative AI & LLM Fine-Tuning Workshop",
-    platform: "Google Cloud Skills Boost",
-    description:
-      "Eksplorasi mendalam mengenai parameter efisiensi tuning, RAG (Retrieval-Augmented Generation), dan orkestrasi agent menggunakan Vertex AI.",
-    status: "Ongoing",
-    imageUrl:
-      "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=600&h=350&q=80",
-  },
-];
-
-const TECH_EVENTS: TechEvent[] = [
-  {
-    id: "event-1",
-    title: "Google Developer Group (GDG) DevFest Bandung",
-    description:
-      "Menghadiri konferensi teknologi tahunan yang membahas arsitektur web modern, kemajuan Android Compose, dan ekosistem multi-agent AI di GCP.",
-    status: "Attended",
-    imageUrl:
-      "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=600&h=350&q=80",
-    location: "Bandung, Indonesia",
-    date: "Desember 2025",
-  },
-  {
-    id: "event-2",
-    title: "Indonesia Tech Summit & Coding Camp",
-    description:
-      "Sesi bootcamp intensif kolaboratif bersama praktisi industri guna memecahkan masalah integrasi data dan scalability sistem.",
-    status: "Attended",
-    imageUrl:
-      "https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=600&h=350&q=80",
-    location: "Online Workshop",
-    date: "Maret 2026",
-  },
-];
-
-const ARTICLES: WrittenArticle[] = [
-  {
-    id: "art-1",
-    title: "Membangun Mental Model untuk React Rendering Engine",
-    description:
-      "Panduan visual mendalam untuk memahami kerja Reconciliation, Fiber Architecture, dan bagaimana meminimalkan re-renders yang tidak efisien.",
-    status: "Published",
-    readTime: "6 min read",
-    url: "https://medium.com",
-    date: "Mei 2026",
-  },
-  {
-    id: "art-2",
-    title: "Optimasi Kueri SQL untuk Database Transaksional Skala Besar",
-    description:
-      "Menganalisis indeks database, teknik denormalisasi yang aman, dan penulisan join kueri yang ramah memori demi menekan latency backend.",
-    status: "Published",
-    readTime: "8 min read",
-    url: "https://medium.com",
-    date: "Juni 2026",
-  },
-  {
-    id: "art-3",
-    title: "Pengenalan Konsep AI Agent & Multi-Agent Orchestration",
-    description:
-      "Membedah bagaimana mendesain dirigen AI (Multi-Agent) menggunakan kerangka kerja LangChain untuk otomatisasi pipeline tanpa intervensi manual.",
-    status: "In Progress",
-    readTime: "Sedang Ditulis",
-    date: "Estimasi rilis Juli 2026",
-  },
-  {
-    id: "art-4",
-    title: "Matematika di Balik Machine Learning: Memahami Gradien Descent",
-    description:
-      "Artikel edukasi ramah pemula yang membongkar visual kalkulus multivariabel dan aljabar linier dalam memperbarui bobot model neural network.",
-    status: "Idea",
-    readTime: "Ide Tulisan",
-  },
-];
+import {
+  CERTIFICATIONS_DATA as CERTIFICATIONS,
+  COURSES_DATA as COURSES,
+  EVENTS_DATA as EVENTS,
+  ARTICLES_DATA as ARTICLES,
+} from "../data"; // atau path yang sesuai
 
 export default function LearningHub() {
   const [activeTab, setActiveTab] = useState<
@@ -342,10 +194,10 @@ export default function LearningHub() {
             </>
           )}
 
-          {/* SECTION B: Tech Events & Community Activity */}
+          {/* SECTION B: Events & Community Activity */}
           {(activeTab === "all" || activeTab === "events") && (
             <>
-              {TECH_EVENTS.map((event) => (
+              {EVENTS.map((event) => (
                 <StaggerItem
                   key={event.id}
                   className="md:col-span-1 lg:col-span-4 bg-slate-900/40 border border-slate-800/80 hover:border-lime-500/30 rounded-2xl p-6 backdrop-blur-md flex flex-col justify-between group transition-all duration-300 hover:shadow-lg hover:shadow-lime-950/10 hover:-translate-y-1 relative overflow-hidden"
@@ -362,7 +214,7 @@ export default function LearningHub() {
                       />
                       <div className="absolute top-3 left-3 bg-[#0F172A]/90 border border-slate-800/60 rounded-full px-2.5 py-1 text-[9px] font-mono text-lime-400 tracking-wider flex items-center gap-1.5 backdrop-blur-md">
                         <Users className="w-3.5 h-3.5" />
-                        <span>Tech Event</span>
+                        <span>{event.eventType}</span>
                       </div>
                     </div>
 
