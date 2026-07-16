@@ -267,7 +267,7 @@ export const EVENTS_DATA: Event[] = [
       "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=600&h=350&q=80",
     location: "Maranatha University",
     eventType: "Tech Event",
-    date: "Desember 2025",
+    date: "Desember 2023",
   },
   {
     id: "event-2",
@@ -279,7 +279,7 @@ export const EVENTS_DATA: Event[] = [
       "https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=600&h=350&q=80",
     location: "Maranatha University",
     eventType: "Tech Event",
-    date: "Maret 2026",
+    date: "December, 2024",
   },
   {
     id: "event-3",
@@ -290,7 +290,7 @@ export const EVENTS_DATA: Event[] = [
     imageUrl: "/images/events/brin-ai-2026.png",
     location: "Online Competition",
     eventType: "Competition Event",
-    date: "Maret 2026",
+    date: "July 25, 2026",
   },
   {
     id: "event-4",
@@ -302,6 +302,28 @@ export const EVENTS_DATA: Event[] = [
     location: "Offline Conference",
     eventType: "Academic Event",
     date: "Maret 2026",
+  },
+  {
+    id: "event-5",
+    title: "Coding Camp Powered By DBS Foundation 2026",
+    description:
+      "Program pelatihan dalam bidang Gen AI Engineer, Data Scientist, dan Full-Stack Web Developer, AI Engineer, serta mencakup soft skills dan literasi keuangan. Tujuannya adalah mempersiapkan peserta secara menyeluruh untuk memasuki dunia kerja dengan menggabungkan keterampilan teknis dan keahlian tambahan yang penting bagi kesuksesan profesional.",
+    status: "In Progress",
+    imageUrl: "/images/events/cc-2026.png",
+    location: "Online",
+    eventType: "Tech Event",
+    date: "Feb - June 2026",
+  },
+  {
+    id: "event-6",
+    title: "Kuliah Umum: Advancing Computer Science Research through Artificial Intelligence",
+    description:
+      "Seminar offline yang membahas tentang bagaimana memanfaatkan AI untuk melakukan suatu riset dengan mempertimbangkan Etika juga.",
+    status: "Attended",
+    imageUrl: "/images/events/kuliah-umum.jpeg",
+    location: "Offline Seminar",
+    eventType: "Academic Event",
+    date: "July 3, 2026",
   },
 ];
 
