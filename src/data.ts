@@ -1,3 +1,4 @@
+import { title } from "process";
 import {
   Certification,
   Course,
@@ -252,7 +253,118 @@ export const SKILLS_DATA: Skill[] = [
 
 // === Learning Hub Data ===
 
-export const CERTIFICATIONS_DATA: Certification[] = [];
+export const CERTIFICATIONS_DATA: Certification[] = [
+  {
+    id: "cert-1",
+    title: "Pengenalan ke Logika Pemrograman",
+    provider: "Dicoding Indonesia",
+    description: `Sertifikat yang didapatkan karena telah menyelesaikan kelas Pengenalan ke Logika Pemrograman.`,
+    status: "Completed",
+    imageUrl:
+      "/images/certificates/coding-camp-2026/pengenalan-ke-logika-pemrograman-1.png",
+    credentialUrl: "https://www.dicoding.com/certificates/RVZK09RVQZD5",
+  },
+  {
+    id: "cert-2",
+    title: "Belajar Dasar Git dengan GitHub",
+    provider: "Dicoding Indonesia",
+    description: `Sertifikat yang didapatkan karena telah menyelesaikan kelas Belajar Dasar Git dengan GitHub pada program Coding Camp 2026.`,
+    status: "Completed",
+    imageUrl:
+      "/images/certificates/coding-camp-2026/belajar-dasar-git-dengan-github-1.png",
+    credentialUrl: "https://www.dicoding.com/certificates/MRZMWGWYKPYQ",
+  },
+  {
+    id: "cert-3",
+    title: "Belajar Dasar Data Science",
+    provider: "Dicoding Indonesia",
+    description: `Sertifikat yang didapatkan karena telah menyelesaikan kelas Belajar Dasar Data Science pada program Coding Camp 2026.`,
+    status: "Completed",
+    imageUrl:
+      "/images/certificates/coding-camp-2026/belajar-dasar-data-science-1.png",
+    credentialUrl: "https://www.dicoding.com/certificates/1RXYWYNDQZVM",
+  },
+  {
+    id: "cert-4",
+    title: "Belajar Dasar Visualisasi Data",
+    provider: "Dicoding Indonesia",
+    description: `Sertifikat yang didapatkan karena telah menyelesaikan kelas Belajar Dasar Visualisasi Data pada program Coding Camp 2026.`,
+    status: "Completed",
+    imageUrl:
+      "/images/certificates/coding-camp-2026/belajar-dasar-visualisasi-data-1.png",
+    credentialUrl: "https://www.dicoding.com/certificates/81P2O230YZOY",
+  },
+  {
+    id: "cert-5",
+    title: "Belajar Fundamental Analisis Data",
+    provider: "Dicoding Indonesia",
+    description: `Sertifikat yang didapatkan karena telah menyelesaikan kelas Belajar Fundamental Analisis Data pada program Coding Camp 2026.`,
+    status: "Completed",
+    imageUrl:
+      "/images/certificates/coding-camp-2026/belajar-fundamental-analisis-data.png",
+    credentialUrl: "https://www.dicoding.com/certificates/L4PQ92GY2PO1",
+  },
+  {
+    id: "cert-6",
+    title: "Belajar Fundamental Pemrosesan Data",
+    provider: "Dicoding Indonesia",
+    description: `Sertifikat yang didapatkan karena telah menyelesaikan kelas Belajar Fundamental Pemrosesan Data pada program Coding Camp 2026.`,
+    status: "Completed",
+    imageUrl:
+      "/images/certificates/coding-camp-2026/belajar-fundamental-pemrosesan-data.png",
+    credentialUrl: "https://www.dicoding.com/certificates/53XE1G8OKZRN",
+  },
+  {
+    id: "cert-7",
+    title: "Belajar Machine Learning untuk Pemula",
+    provider: "Dicoding Indonesia",
+    description: `Sertifikat yang didapatkan karena telah menyelesaikan kelas Belajar Machine Learning untuk Pemula pada program Coding Camp 2026.`,
+    status: "Completed",
+    imageUrl:
+      "/images/certificates/coding-camp-2026/belajar-machine-learning-untuk-pemula.png",
+    credentialUrl: "https://www.dicoding.com/certificates/N9ZONM3Y6XG5",
+  },
+  {
+    id: "cert-8",
+    title: "Belajar Matematika untuk Data Science",
+    provider: "Dicoding Indonesia",
+    description: `Sertifikat yang didapatkan karena telah menyelesaikan kelas Belajar Matematika untuk Data Science pada program Coding Camp 2026.`,
+    status: "Completed",
+    imageUrl:
+      "/images/certificates/coding-camp-2026/belajar-matematika-untuk-data-science.png",
+    credentialUrl: "https://www.dicoding.com/certificates/0LZ0Y09GQX65",
+  },
+  {
+    id: "cert-9",
+    title: "Memulai Dasar Pemrograman untuk Menjadi Pengembang Software",
+    provider: "Dicoding Indonesia",
+    description: `Sertifikat yang didapatkan karena telah menyelesaikan kelas Memulai Dasar Pemrograman untuk Menjadi Pengembang Software pada program Coding Camp 2026.`,
+    status: "Completed",
+    imageUrl:
+      "/images/certificates/coding-camp-2026/memulai-dasar-pemrograman-untuk-menjadi-pengembang-software-1.png",
+    credentialUrl: "https://www.dicoding.com/certificates/MRZMW5QGKPYQ",
+  },
+  {
+    id: "cert-10",
+    title: "Memulai Pemrograman dengan Python",
+    provider: "Dicoding Indonesia",
+    description: `Sertifikat yang didapatkan karena telah menyelesaikan kelas Memulai Pemrograman dengan Python pada program Coding Camp 2026.`,
+    status: "Completed",
+    imageUrl:
+      "/images/certificates/coding-camp-2026/memulai-pemrograman-dengan-python-1.png",
+    credentialUrl: "https://www.dicoding.com/certificates/MRZMWK0JKPYQ",
+  },
+  // {
+  //   id: "cert-",
+  //   title: "Barbar 2026: Laravel & Vue Integration",
+  //   provider: "HMIF Unikom",
+  //   description: `Sertifikat yang didapatkan karena mengikuti kegiatan seminar offline yang diadakan oleh HMIF Unikom.`,
+  //   status: "Completed",
+  //   imageUrl:
+  //     "",
+  //   credentialUrl: "",
+  // },
+];
 
 export const COURSES_DATA: Course[] = [];
 
@@ -316,7 +428,8 @@ export const EVENTS_DATA: Event[] = [
   },
   {
     id: "event-6",
-    title: "Kuliah Umum: Advancing Computer Science Research through Artificial Intelligence",
+    title:
+      "Kuliah Umum: Advancing Computer Science Research through Artificial Intelligence",
     description:
       "Seminar offline yang membahas tentang bagaimana memanfaatkan AI untuk melakukan suatu riset dengan mempertimbangkan Etika juga.",
     status: "Attended",
@@ -324,6 +437,17 @@ export const EVENTS_DATA: Event[] = [
     location: "Offline Seminar",
     eventType: "Academic Event",
     date: "July 3, 2026",
+  },
+  {
+    id: "event-7",
+    title: "BARBAR 2026: Laravel & Vue Integration",
+    description:
+      "Sesi seminar offline yang membahas bagaimana membaut suatu aplikasi full-stack, dengan memanfaatkan teknologi Laravel sebagai Backend dan Vue sebagai Frontend nya .",
+    status: "Attended",
+    imageUrl: "/images/events/barbar-hmif-2026.jpeg",
+    location: "Offline Seminar",
+    eventType: "Academic Event",
+    date: "July 17, 2026",
   },
 ];
 
